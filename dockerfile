@@ -11,7 +11,7 @@ ADD nut.conf /etc/nut/nut.conf
 ADD ups.conf /etc/nut/ups.conf
 ADD upsd.users /etc/nut/upsd.users
 ADD upsd.conf /etc/nut/upsd.conf
-ADD nut.conf /etc/nut/nut.conf
+# ADD nut.conf /etc/nut/nut.conf
 
 # เริ่มการทำงานของ NUT
 CMD ["upsc", "myups@localhost"]
