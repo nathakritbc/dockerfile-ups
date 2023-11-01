@@ -1,0 +1,10 @@
+version: "3"
+services:
+  nut-container:
+    image: debian:11
+    container_name: nut-app
+    volumes:
+      - ./nut-config:/etc/nut
+    devices:
+      - /dev/usb/hiddev0:/dev/usb/hiddev0
+    command: ["upsc", "myups@localhost"]
